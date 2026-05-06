@@ -1,5 +1,6 @@
 import footimg1 from "../images/s7img.svg";
 import logo from "../images/logo2.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -26,18 +27,17 @@ export default function Footer() {
             </p>
           </div>
           <ul className="flex flex-col gap-3 text-[#232536] text-[16px] font-semibold">
-            <li>Home</li>
             <li>
-              <a href="">Service</a>
+              <Link to="/home">Home</Link>
             </li>
             <li>
-              <a href="">Company</a>
+              <Link to="/company">Company</Link>
             </li>
             <li>
-              <a href="">Career </a>
+              <Link to="/career">Career</Link>
             </li>
             <li>
-              <a href="">News</a>
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
           <ul className="flex flex-col gap-3 text-[#232536] text-[14px] font-medium">
@@ -70,7 +70,7 @@ export default function Footer() {
               <a href="">Testimonial</a>
             </li>
             <li>
-              <a href="">Privacy Policy </a>
+             <Link to="/policy">Privacy Policy</Link>
             </li>
             <li>
               <a href="">Terms of use</a>
@@ -92,7 +92,6 @@ export default function Footer() {
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-linkedin"></i>
-
           </div>
         </div>
       </div>

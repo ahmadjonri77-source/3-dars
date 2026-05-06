@@ -9,37 +9,7 @@ import hlogo5 from "../images/hlogo5.svg";
 export default function Header() {
   return (
     <header className="bg-[#232536]">
-      <nav>
-        <div className="box h-20 py-7 flex items-center justify-between">
-          <img src={Logo} alt="" />
-          <ul className="flex text-[#FFFFFF60] text-[16px] font-medium gap-8 ">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Service</a>
-            </li>
-            <li>
-              <a href="">Company</a>
-            </li>
-            <li>
-              <a href="">Career</a>
-            </li>
-            <li>
-              <a href="">Blog</a>
-            </li>
-            <li>
-              <a href="">Contact us</a>
-            </li>
-            <li>
-              <a href="" className="text-[#FFD3AF] flex items-center gap-1">
-                Clone project{" "}
-                <i class="fa-solid fa-arrow-right-long text-white"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+     
       <div>
         {/* top */}
 

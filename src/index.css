@@ -1,11 +1,47 @@
 @import "tailwindcss";
 
-.box{
+.box {
   font-family: "Poppins", sans-serif;
   max-width: 1280px;
   margin: auto;
 }
 
-a:hover{
+
+.hoverbox:hover {
+  opacity: 20;
+}
+
+.hoverbox {
+  opacity: 0;
+}
+
+.bbb {
+  box-shadow: 0 0 10px rgb(240, 240, 240);
+}
+
+.active {
   color: white;
+}
+
+.active::before {
+  position: relative;
+  top: -26px;
+  display: flex;
+  margin-top: 10;
+  width: 50px;
+  height: 3px;
+  background-color: #FFA155;
+  content: "";
+}
+.activelink{
+  color: #454DFD;
+}
+.activelink::before {
+  position: relative;
+  bottom: -80px;
+  display: flex;
+  width: 100px;
+  height: 4px;
+  background-color: #454DFD;
+  content: "";
 }

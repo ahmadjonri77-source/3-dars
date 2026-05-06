@@ -17,7 +17,15 @@ import s4img7 from "../images/s4img6.svg";
 import s5img1 from "../images/s5img.svg";
 import s5img2 from "../images/s5img1.svg";
 import s6img1 from "../images/s6img.svg";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 export default function Main() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <main>
       {/* 1 */}
@@ -466,9 +474,6 @@ export default function Main() {
           <div className="bg-[#FFA155] h-[25%] w-5"></div>
         </div>
       </section>
-
-
-      
     </main>
   );
 }
