@@ -21,21 +21,16 @@
 
 .active {
   color: white;
+  border-top: 4px solid #FFA155;
+  padding-top: 25px;
 }
 
-.active::before {
-  position: relative;
-  top: -32px;
-  display: flex;
-  margin-top: 10;
-  width: 50px;
-  height: 3px;
-  background-color: #FFA155;
-  content: "";
-}
-.activelink{
+
+
+.activelink {
   color: #454DFD;
 }
+
 .activelink::before {
   position: relative;
   bottom: -80px;

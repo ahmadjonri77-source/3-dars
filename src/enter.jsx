@@ -30,11 +30,11 @@ function Nav() {
     <>
       <header className="bg-[#232536]">
         <nav>
-          <div className="box h-20 py-7 flex items-center justify-between">
+          <div className="box border-red-300 h-20 py-7 flex items-center justify-between">
             <img src={Logo} alt="" />
-            <ul className="flex text-[#FFFFFF60] text-[16px] font-medium gap-8">
+            <ul className="flex h-full text-[#FFFFFF60] text-[16px] font-medium gap-8">
               <li>
-                <NavLink to="/home">Home</NavLink>
+                <NavLink className="h-20" to="/home">Home</NavLink>
               </li>
               <li>
                 <NavLink to="/company">Company</NavLink>
